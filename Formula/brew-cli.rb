@@ -1,26 +1,26 @@
 class BrewCli < Formula
   desc "Official agent-first CLI for the Brew public API"
   homepage "https://github.com/GetBrew/brew-cli"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/GetBrew/brew-cli/releases/download/v0.3.0/brew-cli-darwin-arm64"
-      sha256 "d8e7e127dc8c153d02820e4772b1d1fe0662f9252ff1db212e5902f2202770a4"
+      url "https://github.com/GetBrew/brew-cli/releases/download/v0.4.0/brew-cli-darwin-arm64"
+      sha256 "53e4c553e3c04f21b9a96fe2f9022cc97ab0ae570229cd7ce8e4a53343ee7e83"
     else
-      url "https://github.com/GetBrew/brew-cli/releases/download/v0.3.0/brew-cli-darwin-x64"
-      sha256 "55acd354d2561e71942dae498996869357d7a37221ad2e7a289f0471aa8faa19"
+      url "https://github.com/GetBrew/brew-cli/releases/download/v0.4.0/brew-cli-darwin-x64"
+      sha256 "eca393f14e06ac68faa54951952102d98b7aa5796576899c86821be65f099bfa"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/GetBrew/brew-cli/releases/download/v0.3.0/brew-cli-linux-arm64"
-      sha256 "070f79ef8101a8239841f70b7d5e080f9e5fc41d5141b9055160b87a3ecac067"
+      url "https://github.com/GetBrew/brew-cli/releases/download/v0.4.0/brew-cli-linux-arm64"
+      sha256 "c77da1bddcc3ebce6393007cb8001d8f3e7cd28c4b6360b1139b238db457c7f8"
     else
-      url "https://github.com/GetBrew/brew-cli/releases/download/v0.3.0/brew-cli-linux-x64"
-      sha256 "21ed82faa6af2d6acdeefe970d73932384c9a95da02bb7fd718f61b5de4e55a5"
+      url "https://github.com/GetBrew/brew-cli/releases/download/v0.4.0/brew-cli-linux-x64"
+      sha256 "794e7406f2aec981281263a75f1357fdc1a1eaba57eefa2cfc22fcb735eaf5af"
     end
   end
 
