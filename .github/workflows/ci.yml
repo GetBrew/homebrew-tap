@@ -1,0 +1,17 @@
+name: Formula
+on:
+  pull_request:
+  push:
+    branches: [master]
+permissions:
+  contents: read
+jobs:
+  release-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - run: ruby -c Formula/brew-cli.rb
+      - run: python3 scripts/test-formula.py
+      - run: python3 scripts/check-formula.py --download
